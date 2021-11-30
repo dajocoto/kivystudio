@@ -139,7 +139,7 @@ class InnerCodeInput(HoverBehavior, CodeExtraBehavior, CodeInput):
             on the codeinput '''
         rightclick_dropdown = InnerCodeInput.rightclick_dropdown
         if rightclick_dropdown:
-            rightclick_dropdown.open()
+            rightclick_dropdown.open(self)
         else:
             InnerCodeInput.rightclick_dropdown = CodeInputDropDown()
             InnerCodeInput.rightclick_dropdown.open(self)
